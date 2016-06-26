@@ -1,0 +1,111 @@
+ history
+    1  apt-get update
+    2  vagrant ssh-config
+    3  apt-get install lamp
+    4  ls
+    5  ll
+    6  apt-get update
+    7  apt-get install apache2
+    8  ifconfig eth0 | grep inet | awk '{ print $2 }'
+    9  sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+   10  sudo mysql_install_db
+   11  sudo /usr/bin/mysql_secure_installation
+   12  root@precise64:~#
+   13  sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+   14  sudo nano /etc/apache2/mods-enabled/dir.conf
+   15  apt-cache search php5-
+   16  sudo apt-get install name of the module
+   17  sudo apt-get install LAMP
+   18  sudo apt-get install lamp-server^
+   19  sudo nano /var/www/info.php
+   20  sudo service apache2 restart
+   21  sudo service apache2 start
+   22  ls
+   23  ll
+   24  sudo service apache restart
+   25  sudo service apache2 start
+   26  sudo service apache restart
+   27  ls
+   28  ls -al
+   29  sudo apache2ctl start
+   30  sudo apt-get install --reinstall apache2 apache2-bin
+   31  apache2 -v
+   32  sudo apt-get purge apache2*
+   33  sudo apt-get install apache2
+   34  sudo netstat -anop | grep apache
+   35  sudo service apache2 status
+   36  ifconfig eth0 | grep inet | awk '{ print $2 }'
+   37  sudo service apache restart
+   38  sudo service apache2 restart
+   39  sudo service apache2 status
+   40  ifconfig
+   41  ls
+   42  ll
+   43  ls -a
+   44  sudo service apache2 status
+   45  sudo service apache2 restart
+   46  sudo service apache2 stop
+   47  restart
+   48  shutdown
+   49  sudo reboot
+   50  apt-get update
+   51  sudo service apache2 status
+   52  sudo service apache2 stop
+   53  sduo poweroff
+   54  sudo poweroff
+   55  history
+   
+   Devops
+Tools Covered as Part of this Training - SVN, GIT, MKS, Teamsite, Ant, JIRA, Maven, Ticketing tools (JIRA, ITSM),  Jenkins, IBM Urbancode UB/UD, Unix/ Linux Shell Scripting and Web server and application server required for RMT.
+Software Development Life Cycle and its Phases
+1.	Understanding Water fall / Iterative / Agile Models
+2.	RMT roles and its importance in SDLC
+SCM Concepts and Tools 
+•	Software Configuration Management overview
+•	Elements of Software Configuration Management
+•	Introduction of Version management / Source Code Management
+•	Overview of Build management
+•	Overview of Packaging management
+•	Overview of Release and Deployment management
+1. SVN / MKS / GIT
+Build Tools
+2. ANT 
+3. MAVEN
+Configuration Management Tools:
+4.	Chef Fundamental
+5.	Chef Advance
+6.	Puppet Fundamental
+Continuous integration & Continuous Delivery
+7. Jenkins  / Docker / IBM Urbancode UB/UD
+Bug Tracking Tools
+8. Jira
+
+
+Deployment Tool
+9. Teamsite
+Scripting
+10. Unix Shell scripting required for build and release
+Web and Application server
+11.  Webserver and application server concepts required for Build and Release management  
+12. Understanding the clustered environments and releasing the code on production servers
+ITIL
+13. over view of ITIL – best practices and its need 
+14. Detailed discussion on Service transition and operations modules & Build and Release management role in each  
+module.
+15. ITIL certifications papers of Peoplecert and exin
+Real-time use cases and experience 
+16. Cherry picking the patches from one branch to other, Preparing Release Notes, Automating the manual jobs as 
+needed, triaging the Build failures, etc
+17. Release management standards and policies / best practices & Different type of releases 
+18. Understanding the Embargo / freeze period / service protection period and releases done in this periods
+19. Understanding CR / IN /PR / CI / CMS/ PLADA.
+20. BAU changes and preparing implementation plan
+21. Releasing critical/complex projects
+22. Understanding importance of change management / Service management policies
+23. Attending CAB meetings
+24. Troubleshooting issues in a release.
+25. Environment build and Management & Demising Un-used environments.
+26. How to prepare a backout build / how do we revert the changes back if anything goes wrong. Sample CRs to 
+explain.
+27. Interview questions / Sample resume explanation / guidance to prepare resumes.
+28. Real Time Projects explanation and Placement Tip
