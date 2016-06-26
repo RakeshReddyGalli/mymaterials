@@ -1,0 +1,174 @@
+Devops - CI/CD - Session 1
+
+CI = continous integration
+CD = Cintinous deployment
+
+
+Tools
+- Ant
+- Maven
+- Jenkins/Hudson
+
+
+
+open source java (this comes by default with all linux distributions)
+
+java version "1.7.0_45"
+OpenJDK Runtime Environment (rhel-2.4.3.3.el6-x86_64 u45-b15)
+OpenJDK 64-Bit Server VM (build 24.45-b08, mixed mode)
+
+--------------
+
+Oracle Java
+java version "1.7.0_79"
+Java(TM) SE Runtime Environment (build 1.7.0_79-b15)
+Java HotSpot(TM) 64-Bit Server VM (build 24.79-b02, mixed mode)
+
+
+JDK - Java Development kit
+JRE = java Runtime environment
+
+============================================
+
+how to install java
+
+1. download java jdk from website
+2. copy it to the linux host using the filezilla client (/opt/java location)
+3. add the execute permission on the file
+	chmod +x <downloaded file>
+	chmod +x jdk-7u79-linux-x64.gz
+
+4. extract the zip file
+	tar -xzf jdk-7u79-linux-x64.gz
+		this will create a new directory
+5.  cd jdk1.7.0_79/
+	do a pwd command and copy the location (pwd = present working directory)
+6. cd (this will take to user's home directory)
+7. vim .bash_profile (add/append the below line)
+
+	export JAVA_HOME=/opt/java/jdk1.7.0_79
+	export JRE_HOME=/opt/java/jdk1.7.0_79/jre
+
+
+
+	PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$JRE_HOME/bin
+
+	export PATH
+
+8. exucute the  ".bash_profile" to see the changes into effect
+	. ./.bash__profile
+
+9. install java using "alternatives" command
+	alternatives --install /usr/bin/java java /opt/java/jdk1.7.0_79/bin/java 2
+
+	in ubuntu - use the command as beloe
+	update-alternatives  --install /usr/bin/java java /opt/java/jdk1.7.0_79/bin/java 2
+
+
+10. configure java 
+	alternatives --config java
+		(select the java version that you want to use
+	in ubuntu use the command as below. 
+		update-alternatives --config java
+
+
+
+11. do "java -version"
+		this should give the java version that you installed.
+
+
+NOTE
+	you can install and manage multiple java versions on Linux/windows
+
+
+===========================================================
+
+ANT
+	- Another Neat Tool
+	- majorly built for java
+
+ant is free , with apache open source license
+
+how to install ANT
+
+1. download apache-ant from https://ant.apache.org/bindownload.cgi
+2. use file zilla to copy the file to linux machine /opt/ant
+3. chmod +x <file name>
+4. tar -xzf <file name>
+5. cd <folder>
+6. pwd and copy the location
+7. cd and vim .bash_profile and add the below line
+	export ANT_HOME=/opt/ant/apache-ant-1.9.4
+8. append the PATH variable as below.
+	PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$JRE_HOME/bin:$ANT_HOME/bin
+	
+save and exit
+
+9. execute the bash profile as below
+	. ./.bash_profile
+
+10. now do  "ant" command and it should give the below output
+
+	Buildfile: build.xml does not exist!
+Build failed
+
+
+IMPORTANT
+	- Ant works with buld.xml file and it is very very important. 
+
+
+===================
+
+ubuntu
+	install ant with thebelow command
+		apt-get -y install ant
+		this will install older version
+	
+or
+	download ant latest version <package>.deb file and do as below
+		apt-get -y insall <package>.deb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

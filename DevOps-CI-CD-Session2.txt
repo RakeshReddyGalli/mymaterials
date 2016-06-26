@@ -1,0 +1,91 @@
+Devops - Ant - Session 2 
+
+
+
+Based on the build file, we have few definitions
+
+every build.xml file will have below.
+
+1. project
+2. targets
+3. task
+
+	- project <
+		- a collection of targets (named)
+		- built with dependency between the targets
+		- one project per build file
+
+	- targets
+		- it has specific tasks
+		- it can have dependnecy with other targets
+			- not dependent on otther tasks/projects
+		- every target can be appended wth attributes
+
+	- tasks
+		- example = eecho, copy create dir, execute, clean, compie etc etc 
+
+
+
+=================== create a build.xml file
+
+1. create a ant-builds directory and vim build.xml file in the ant-builds dir. add the below content
+
+--------------
+<project name="Pro1" default="step3">
+
+
+        <target name="init">
+                <echo message="Hello World!!!!"/>
+        </target>
+
+
+        <target name="step2" depends="init">
+                <echo>
+                        this is line 1
+                        this is line 2
+                        this is line 3
+                </echo>
+
+        </target>
+
+        <target name="step3" depends="step2">
+                <echo>
+                        this is step 3.1
+                        this is line 3.2
+                        this is line 3.3
+                </echo>
+
+        </target>
+
+</project>
+
+----------------------------
+2. now do "ant" command
+	it will use the build.xml file and execute it as per target dependency.
+
+
+3. we can call specfic targets
+
+	ant <target name>
+
+4. location from where we can see the list of tasks
+	https://ant.apache.org/manual/tasklist.html
+
+5. default seq of tasks
+	- clean
+	- init
+	- compile
+	- package(bzip/tar/jar/war>
+	- distribute/deploy
+
+
+
+
+
+
+
+
+
+
+
+

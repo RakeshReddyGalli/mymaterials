@@ -1,0 +1,53 @@
+Dev Ops :: Vagrant :: Session 3 
+
+Plugin for vmware work station
+- vmware fusion (mac books)
+- vmware workstation (windows)
+
+
+- vagrant plugin install <plugin name>
+- vagrant plugin uninstall <plugin name>
+
+you need to get the license.lic from the vendor (through email)
+copy it the location where it is accessible be vagrant, generally home folder
+
+
+usage
+- in the Vagrantfile configuration
+	config.vm.provider "virtualbox || workstation || fusion" do |vb|
+
+- on the command line
+	vagrant init <box name> --provider woarkstation || fusion
+
+===================================
+
+1. port forwarding
+2. shared folders
+
+Steps
+1. update the Vagrant Config file as below. 
+
+config.vm.box = "hashicorp/precise32"
+  config.vm.network "public_network", ip: "10.0.0.16"
+  config.vm.network "forwarded_port", guest: 80, host: 8010
+  config.vm.synced_folder "tempdir/", "/var/www"
+
+2. do a vagrant reload
+3. install apache2 || httpd
+
+4 test your config changes
+ localhost || public ip : 8010
+
+5. create a index.html file on the hostmachine
+	- reload the web page to see the changes effected. 
+
+
+
+
+
+
+
+
+
+
+

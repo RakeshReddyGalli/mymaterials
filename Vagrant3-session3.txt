@@ -1,0 +1,39 @@
+DevOps - Vagrant - session 2
+
+1. vagrant works with boxes
+- vagrant box list
+- vagrant box add name url
+
+default website is https://atlas.hashicorp.com/boxes/search
+other website is
+	vagrantbox.es
+
+
+2. location for boxes and machine
+	box = C:\Users\boppuri\.vagrant.d\boxes
+	machines : the location where you have the vm folder
+
+
+NOte
+	- any thing that starts with "." in linux is a hidden file or folder.
+
+
+
+3. Vagrantfile
+	- this is the main config file of vagrant vm
+	- it is written in ruby language
+	- anything that has "#" is a comment. 
+
+
+4. how to assign an IP 
+5. how to share fodlers from local laptop to vm
+
+
+
+
+Assignment
+1. learn linux boot process
+2. learn run levels in linux
+
+
+

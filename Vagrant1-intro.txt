@@ -1,0 +1,126 @@
+DevOps - Virtualization - Session 1
+
+
+- what is virtualization
+	- amplifying of hardware resources 
+
+
+
+Physical server is some thing like a Individual Duplex house.
+Virtual servers is some thing like various flats in an appartment. 
+
+
+If the hardware configuration is like below.
+
+	- 8gb RAM
+	- 4CPU
+	- 500GB
+ - A Physical server uses all the above resources and nothing is shared.
+
+ - If virtualized, you can create multiple VMS and the above resources are shares as below.
+	- VM1 = 512mb ram, 1VCPU, 30GB HD => Application 1 (256mb of ram)
+	- VM2 = 512mb ram, 1VCPU, 30GB HD => application 2
+	- VM3 = 512mb ram, 1VCPU, 30GB HD => Application 3
+	- VM4 = 512mb ram, 1VCPU, 30GB HD => Application 4
+	 
+============================
+
+Virtualization vendors
+
+vmware
+	- VMWARE Workstation (Desktop edition), this is a software.
+	- VMWARE ESXI servers (Server edition), THis is a operating system. 
+
+ 
+citrix (servers)
+HyperV (Microsoft) (servers)
+Zen (servers)
+Virtual Box (workstation) - provided by oracle (Free/Opensource)
+
+-----------------
+other devlopment related virtualization tools
+	- Vagrant
+	- Docker
+
+
+both the tools are Open source. 
+
+
+-------------------------------------
+After completion of assignment 2 and 3 do the below steps
+-------------------------------------
+
+1. open a drive that has much free space.
+	- create a folder -> Virtual-machines
+	- go into the folder "Virtual-machines"
+	- Create a Folder -> "VM1-Ubuntu-precise32"
+	-  go into the folder
+	- shift + right click in the folder
+		- select the option "Open Command window here"
+
+	- in the command prompt run the below command
+		- vagrant init hashicorp/precise32
+		- vagrant up
+			- after the above command is executed successfully, 
+			open virtual box and you can see a new vm created and running. 
+
+		- download "Putty" 
+
+
+
+------------------
+Better practices of naming conventions
+	- no spaces in the name
+		- Folder 1 -> bad example
+		- Folder-1 or folder_1
+	- Include purpose in the name
+		- 2009-pics
+			- My_birthday_at_vizag
+			- xyz_wedding_at_delhi_11_June
+
+
+
+servers
+- Purpose-#-location-domain
+
+ex
+ - web01ny.toi.com
+ - web-01-ny.toi.com
+
+ - app22sgdc.amazon.com
+
+
+-------------------
+
+
+
+
+
+
+
+
+
+
+
+============================
+Assignments
+1. learn how to use one note
+ 	- install one note on both laptop and mobile.
+	- start writing notes in one note
+
+2. download virtual Box and install it on your laptop
+	https://www.virtualbox.org/wiki/Downloads
+
+3. Download and install Vagrant (this should be done after assignement 2)
+	https://www.vagrantup.com/downloads.html
+
+4. best practices in naming conventions
+ 
+5. watch videos to learn - how to create a vm in oracle virtual box, vmware workstation. 
+
+
+
+
+
+
+

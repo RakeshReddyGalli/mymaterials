@@ -1,0 +1,191 @@
+DevOps - Vagrant- session 2
+
+
+
+the username and password to log into all the vagrant machines is the same
+
+
+username = vagrant
+password = vagrant
+
+
+NOTE
+	- by default vagrant connects on loop back address ... i.e. 127.0.0.1
+	- port number 2222, 2200, 2201 etc etc
+
+
+when you perform the below commands
+	- vagrant init hashicorp/precise32
+ 	- vagrant up
+  - one file "Vagrantfile" and one folder ".vagrant" are created.
+	
+
+******** Vagrantfile is very important. 
+	It is the main configuration file of the virtual machine hashicorp/precise32
+
+
+
+switch to "root" user
+
+	sudo -i
+
+
+root user is the admin user. he has full permissions on the machine and can do anything. 
+
+
+
+1. once you loginto the machine for the first time....do the below command
+	
+	apt-get update
+	
+
+	this command will update all the software repo required in the system
+	you perform this command only once .. the first time you login to the machine.
+
+
+
+
+2. how to bring up a second vagrant machine
+
+ - under virtual-machines, create a new folder
+	- vm2_ubuntu_preice32
+
+
+note - you should see 2 folders in the current location
+	- vm1.ubuntu.precise32
+	- vm2.ubuntu.precise32
+
+
+ - go into this folder "vm2.ubuntu.precise32"
+	- currently this folder should be empty
+	
+	- shift + right click 
+	- open command prompt from here
+
+ - perform the same commands again
+	- vagrant init hashicorp/precise32
+	- vagrant up
+
+
+
+
+--------------
+Ports
+
+1 to 65536
+
+1 to 1024 are reserved for system related services
+
+common ports
+- ssh (secure shell) (putty) = 22
+- telnet = 23
+- webserver = 80
+- ftp = 20/21
+- pop = incoming email = 110
+- smtp = simple mail transfer protocol = outgoing email = 25
+- dns = 53
+
+
+--------------
+
+
+
+
+3. bring up a diff vm with a diff operating system vm
+
+ 1. create a new folder "vm3-ubuntu-trusty32"
+ 2. open command prompt from this location
+ 3. perform the below "vagrant command"
+
+	vagrant init ubuntu/trusty32
+	vagrant up
+
+
+
+-------------------
+
+
+few more commands about vagrant
+
+
+a. to see the status of the virtual machine
+	
+	vagrant status
+
+b. to stop a virtual machine 
+	
+	vagrant halt
+
+c. to restart the virtual machine
+	
+	vagrant reload
+
+d. to delete the virtual machine
+	
+	vagrant destroy
+	- this is like reset your phone 
+		--> all the data/applications on the vm will be deleted. 
+
+
+e. to see which version of vagrant is installed ... 
+
+	vagrant version
+
+f. to pause a vagrant machine
+
+	vagrant suspend
+
+g. to resume a paused vagrant machine
+
+	vagrant resume
+
+
+
+
+
+
+
+
+
+
+
+Assignments
+1. bring up 2 more vms with the below operating system
+	centos 7 => centos/7
+	centos 6 => bento/centos6.7
+		- on bothe machines
+			sudo -i
+			yum -y update
+
+
+
+2. build a ubuntu machine on oracle virtual box
+	note - see the installation setps in youtube
+
+	1. download ubuntu iso file for 12.04
+        2. create a vm in VB
+	3. Mount the iso file to the VM
+	4. turn on the machine  and complete the installation.
+		- make a note of the comeplete time 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

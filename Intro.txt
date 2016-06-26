@@ -1,0 +1,69 @@
+DevOPs - Introduction
+
+- it is a culture of autmation
+	development
+		- integration
+		- deployment
+		- build
+	operations (suppport in infrastructure area)
+		- providing development environment automatically
+		- automating backups
+		- automating system maintenance and configuration
+		(500 + server min )
+
+2. it is bridge between developers and operations
+
+
+tools
+ - development area
+	- CI & CD (Continous integration and continous deployment)
+		- ant * 1 day
+ 		- maven * 1 day
+		- jenkins * 1 day
+			- cucumber, baboo, cruise control
+		- verion control = Git * 1 day
+			- Subversion, CVS
+
+	
+	- Virtualization
+		- vagrant * 3-4 days
+		- docker * 3 days
+
+		traditions virtualization system
+			- vmware
+			- citrix
+			- HyperV
+			- Zen
+
+
+	- Infrastructure Management
+		- Puppet  5 days
+		- Chef 5 days
+		- anisible
+
+
+	- Aws = 1 day (Amazon web services) (cloud)
+
+
+learn any scripting language
+ - C, bash
+
+	- variable scope
+	- data types
+	- logic
+		- if, else; case; for, while, until
+
+
+
+
+What will we learn
+ - architecture
+ - installation
+ - configurations
+ - some example codes around the tool
+ - troubleshooting 
+
+
+
+		
+

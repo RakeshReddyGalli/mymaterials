@@ -1,0 +1,86 @@
+DevOps - Docker - session2
+
+------
+
+Docker installation
+
+
+1. windows = virtual box and docker tools
+2. linux = virtual box and docker-engine
+3. mac = virtual box and docker engine
+
+===========================
+
+Linux installation
+
+kernel level 3.10 or above
+
+
+1. docker works only on 64 bit machine
+2. kernel version to be min 3.10 or above
+3. two ways of installation
+	- add a reposiroty on /etc/yum.repos.d/docker-repo
+		[dockerrepo]
+		name=Docker Repository
+		baseurl=https://yum.dockerproject.org/repo/main/centos/		$releasever/
+		enabled=1
+		gpgcheck=1
+		gpgkey=https://yum.dockerproject.org/gpg
+		
+		yum -y install docker-engine
+
+	- install from command line
+		- curl -sSL https://get.docker.com | sh
+
+
+4. Docker has a service
+	- service docker start
+	- chkconfig docker on
+
+==========
+
+Docker architecture
+3 main components
+	- deamon
+	- docker client
+	- docker.io registry
+
+
+#docker run hello-world
+Hello from Docker.
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+
+======================
+
+commands
+1. docker images
+	- the list of the images that are available on local repository
+2. docker search <os>
+	- ex - docker search centos
+		- this will search the images available on docker hub
+3. docker info
+	- provides info about
+		- how many images/containers we have
+		- SERVER VERSION
+		- space available
+		- meta data
+4. docker pull ubuntu:latest
+	- it will pull the image from docker hub
+
+5. docker run -t -i ubuntu /bin/bash
+	- to log into the machine, get a bash command prompt
+	- perform a top
+	- memory allocation 
+
+6. docker version
+
+

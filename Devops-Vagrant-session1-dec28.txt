@@ -1,0 +1,130 @@
+Vagrant 
+
+Virtualization concept
+
+
+1. vmware, Citrix
+steps to create a VM in VMWARE
+- Vmware software - ESXi or workstation
+	- licensed version
+	- if esxi - huge system requirements
+		- RAM, CPU, storage  etc etc
+	- if Workstation 
+		- min of 4Gb ram to create machine
+- Download respective ISO files
+	- Generally minimal install of Centos (close to 2Gb)
+	- if you want Ubuntu (approx - 3gb)
+
+- create a specific folder where you want to create the VM
+	- all the VM related files will be stored in that folder
+	- VMDK files etc
+
+- go through the process of creating the VM on workstation/ESXi
+	- various gui screens where you selct options and click next etc etc 
+
+- installation time will take approx 30 Min
+
+- you take a template and reuse it 
+
+- increase the storage as needed
+- destroy the VM if needed
+
+
+==================
+
+Over all turn around time to get a VM in real time environment is aprrox 3 to 6 hours, based on scenario (availability of all the resources)
+
+
+====================
+
+Vagrant
+- easy to create
+- reproducable
+- portable
+- configurable with other tools (such as puppet and Chef)
+	- Automate
+	- Example 
+		Virtual environment installed with HTTPD
+		- service turned on
+		- Chkconfig
+
+
+
+Turn around time to get a working Virtual environment
+- 10 to 15 mins (based on network bandwidth available for download)
+
+
+What do we nneed
+1. Oracle Virtual Box
+https://www.virtualbox.org/
+
+2. Download and install Vagrant
+https://releases.hashicorp.com/vagrant/
+
+On windows
+- open command prompt
+- navigate to the folder where you wnat to create the Vagrant box
+- do the below steps
+
+
+Starting up
+1. vagrant init hashicorp/precise32
+	- this will crate a Vagrantfile
+		- this is a configurable file
+2. Vagrant up
+3. vagrant ssh
+
+
+default: SSH username: vagrant
+password vagrant
+
+has sudo permissions
+
+ default: SSH address: 127.0.0.1:2200
+
+
+
+https://atlas.hashicorp.com/boxes/search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

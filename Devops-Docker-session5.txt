@@ -1,0 +1,49 @@
+Dev-Ops Docker session 5
+
+1. volume management (mount local drive into the docker container)
+2. docker networking
+3. docker image repo management
+4. docker build (from file)
+
+
+
+
+
+1. Volume management and Port forwarding
+
+docker run -ti -v /root/dockdir:/var/www/html -p 8082:80 ubuntu/apache:v1 /bin/bash
+
+
+
+-p(port) <base os port>:<guest OS port>
+-v(volume) <base os dir>:<mount on guest os dir>
+
+
+2. Docker build
+
+from jdeathe/centos-ssh (hash a)
+MAINTAINER admin<root@localhost>
+
+RUN /usr/bin/yum -y update (hash b)
+RUN /usr/bin/yum -y install httpd (hash c)
+RUN echo "This is our new webserver" >> /var/www/html/index.html (hash d)
+
+EXPOSE 80 (hash e)
+
+RUN echo "/sbin/service httpd start" >> /root/.bashrc (hash f)
+
+
+===========================================
+
+optimized way of writing docker file
+
+from jdeathe/centos-ssh
+MAINTAINER admin<root@localhost>
+
+
+RUN /usr/bin/yum -y update > /dev/null 2>&1 ; /usr/bin/yum -y install httpd > /dev/null 2>&1; echo "This is our new webserver" >> /var/www/html/index.html; EXPOSE 80; echo "/sbin/service httpd start" >> /root/.bashrc
+
+==========================================================================
+
+
+

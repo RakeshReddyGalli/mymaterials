@@ -1,0 +1,57 @@
+DevOps - Docker - session 3
+
+1. docker run -d training/webapp /bin/bash -c "while true; do echo Opensource; sleep 1; done"
+
+	-d = will run as a daemon on the background
+	opensource is output for every 1 sec
+
+2. docker ps
+	- container ID
+		- if run on background = a long hash value
+		- if run on terminal 	= 1st 12 digits of the hash
+		- it is used to uniquely identify the running container
+		- changes every time the container is started/restarted
+	- Image
+		- if availabel in local repo, bring it up
+		- if not, download from docker hub, store it in local repo
+			- bring it up
+	- command
+		- any linux command
+	- created
+	- status
+	- ports
+		- manage ports
+	- name
+		- dynamically assigned if not declared
+		- changes everytime if not declared
+		- configurable
+
+3. docker logs <12 digit container ID>
+
+4. docker stop <12 digit container ID>
+
+5. packaging
+	- take a existing container (local repo or docker hub)
+	- log into it 
+		docker run -t -i <container name> /bin/bash
+		note
+			- it gives a 12 digit hash value
+			- root@<12 ditgit hash>#
+	- install package or create file etc
+	- take the 12 digit has value and exit
+	- package as below
+	  docker commit -m "added ruby" -a="trainer" <12 digit container ID> ubuntu1/mymac:v1
+		- it gives another long hash value, which is the unique ID of the image
+	- verify the new image
+		- docker images
+
+
+
+	
+
+
+
+
+f37cdd20fe09
+
+

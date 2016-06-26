@@ -1,0 +1,166 @@
+DevOps - Networking Basics
+
+
+BSNL # = 94401|2|3|4|5
+Airtel = 97|99|98|
+Vodaphone = 996, 98858
+reliace = 93938 | 9292 | 
+
+
+Area code
+Hyderabad = 040
+Banglore = 080
+chennai = 044
+
+
+
+the moment you see an ip address, you should be able to answer 2 questions
+1. is this is a public ip addresss or a private ip address
+2. what class of Ip address is this. 
+
+
+
+
+scenario -> Hotel Best western west towne suites
+we all want a reservation in hotel for saturday
+we call on  Phone: 608/833-4200
+we reach the hotel on saturday morning
+we all got 1 room each ... ex --> 202, 303, 1001 
+
+
+==========
+hotel radisson
+
+raghav and Mirza
+
+call on phone 608 833 4300
+reach the hotel
+allot rooms
+	---> 202 and 303
+
+
+
+
+================================================
+
+
+similarly
+
+ - Every company, website has a public ip address (1 or 2 or 3 ) ... max 10
+	- these public ip addresses are provided by ISP providers
+	- these have a charge attached to it. 
+	
+
+- every company has a range of private ip addresses 
+	- these are free to use
+	- configured and manatained by internal network administrator
+
+
+
+---------
+Ip address 
+
+[1-255].[0-255].[0-255].[0-255]
+
+
+1.1.1.1
+100.126.10.240
+50.111.175.250
+
+100.0.1.2
+----------------
+
+Classes of Ipaddress
+
+
+		PUBLIC RANGE			PRIVATE RANGE
+class A	= [1.0.0.1   to 126.255.255.254][10.0.0.0    to 10.255.255.255]
+Class B = [128.1.0.1 to 191.255.255.254][172.16.0.0  to 172.31.255.255]
+Class c = [192.0.1.1 to 223.255.254.254][192.168.0.0 to 192.168.255.255]
+Class D --- not used
+Class E --- not used 
+
+
+1 - Public
+2 - public 
+3 - public
+4 - public
+5 - public
+6 - private
+7 - public
+8 - public
+9 - public
+10 - public
+
+
+versions of Ip address
+Ipv4 64bit 
+Ipv6 128 bit
+
+
+127.0.0.1 to  127.255.255.255  = these are loop back address.
+every computer will have this address names as "loopback"
+this is used for testing connectivity and some application services. 
+
+
+169.X.X.X
+- if a computer|server doesnt get a ip address from the dhcp server or router, this ip address is auto assigned by the system NIC card. this cannot be used to communicate either privately or publicly. 
+
+
+------------------------
+
+network devices
+1. routers
+	- communicate based on Ip address 
+	- these are called as layer 3 devices
+
+2. switches
+	- layer 2 switches communicate based on MAC address
+	- layer 3 switches communicate based on IP address
+
+3. hubs
+	- these are repeators
+	- not intelligent devices like routers and switches
+
+4. Firewall
+5. load balancers
+
+Vendors
+	- cisco router
+	- Juniper
+	- citrix -> netscaler
+	- home user - netgear
+
+
+Additional learns
+- subnetting
+- nating
+- pating
+- Switching protocols
+	- spannning tree protocol
+	- RSVP
+ 
+- routing protocols
+	- RIP V1
+	- EIGRP
+	- OSPF
+	- RIP V2
+	- BGP
+
+------------------------------
+
+Assignments
+1. read about basic networking concepts
+2. learn 50 most commonly used linux commands, learn vim 
+3. learn how to install a web server in Centos | Ubuntu | windows
+4. OSI layers
+
+
+
+
+
+
+
+
+
+

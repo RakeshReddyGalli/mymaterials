@@ -1,0 +1,66 @@
+DevOps - Vagrant - Session 2
+
+1. vagrant reload
+2. vagrant plugin list
+=====================
+Networking (Assigning the bridged ipaddress)
+config.vm.network "public_network", ip: "10.0.0.16"
+
+Adv
+- access the machine like another entitiy on the network
+
+
+======================
+Types of Vangrant box shut down
+1. Vagrant  suspend  
+	- Pause - the VM is paused
+	- Disadv - the resources - Mem and Disk space are locked for a while
+	- Advantage
+		- you can quickly resume
+
+2. Vagrant halt
+	- shut down cleanly
+	- no files or changes to the machine are lost
+
+3. Vagrant destroy
+	- shutdown a vm but like a reset
+		- all the packages or files that are created on top of the base machine will be lost
+	- if you boot the machine, the base image that was first downloaded will be brought
+
+4. Vagrant box list
+ - gives the list of downloaded vagrant box images
+	Available subcommands:
+     add
+     list
+     outdated
+     remove
+     repackage
+     update
+
+Vagrant boxes download from 
+http://www.vagrantbox.es/
+
+
+
+
+=================
+BOOT UP process
+1. check forht base image availability in local repo
+2. if not listed, download from atlas or any user given website
+	- install and open the machine
+3. if listed, it will boot from the base image
+
+===================
+
+
+5. Vagrant package
+
+
+
+
+
+
+
+
+
+

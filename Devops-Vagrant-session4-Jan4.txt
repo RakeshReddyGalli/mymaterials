@@ -1,0 +1,56 @@
+DevOps Vagrant session 4
+
+1. location of the boxes repository
+	- .vagrant.d location in home directory of the user who use the vagrant 
+2. metadata location of the vagrant box that we bring up
+	- ".vagrant" folder. this is located in the folder where the vm is brought up
+
+==================================
+
+naming the vm
+ - vm.config.hostname = <hosntname> (in the box)
+ vm.config.define = <name> (outside the box to identify on the base machine)
+
+
+==================================
+
+
+provisioning
+1. shell script
+2. puppet
+3. chef
+
+1. shell script
+	- config.vm.provision "shell", inline: <<-SHELL
+		apt-get upate
+		apt-get -y install apache2
+
+		END
+
+	- config.vm.provision "shell", "scipt1.sh"
+		#!/bin/bash
+		sudo apt-get update
+		sudo apt-get -y install apache2 > /dev/null 2>&1
+		echo "Apache is installed now on your machine"
+
+==================================
+
+Adding multiple machines
+
+
+ config.vm.box = "precise64"
+  config.vm. box_url = "http://files.vagrantup.com/precise64.box"
+  config.vm.define "web" do |web|
+        web.vm.network "public_network", ip: "10.0.0.17"
+        web.vm.hostname = "web"
+        web.vm.box = "apache"
+  end
+
+  config.vm.define "db" do |db|
+        db.vm.network "public_network", ip: "10.0.0.18"
+        db.vm.hostname = "db"
+        db.vm.box = "mysql"
+  end
+
+
+

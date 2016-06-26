@@ -1,0 +1,85 @@
+DevOps Docker Session 1
+
+
+1. Virtualization concept
+	- Software level 
+		- OS level
+
+	- hardware level
+		- VMware ESXi server, Citrix server etc 
+
+
+Exterprise level (any software company)
+VMware ESXi server - version 5 and version 6
+Citrix 
+
+Destop level
+- VMware Workstation (lisenced)
+- Virtual Box (Oracle) (free software/Open source)
+
+============================================
+
+Docker is container
+
+Differences between Virtual Machine and Containers
+
+VM
+	- seperate Operating system
+	- allocated RAM and Disk space
+	- booting process etc etc
+
+Container
+	- part of base operating system
+	- uses the under used / shared resources of base system
+	- no booting process
+	- though a part of base system, it is a individual entitiy
+
+------------------------------------
+
+Docker works only on 64 bit machine
+
+
+=========================================
+
+
+Windows 10
+
+download Virtual Box (oracle) version 4.3
+https://www.virtualbox.org/wiki/Download_Old_Builds_4_3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

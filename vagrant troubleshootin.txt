@@ -1,0 +1,10 @@
+devops - vagrant - troubleshooting
+
+1.  vagrant up 
+	- info
+	- debug
+	- warn
+	- error
+	- set up environment variables
+		VAGRANT_LOG={info, debug, warn, error}
+  

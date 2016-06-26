@@ -1,0 +1,116 @@
+DevOps - Server and networking basics
+
+Operating system
+Windows
+	- Desktop editions	
+		- windows XP, 7, 8, 10, vista (home, professional, ultimate)
+	- server edition
+		- Windows 2000, 2003, 2008, 2012
+		(standard, Enterpise, datacenter)
+		(32 bit or 64 bit) 
+		
+
+Linux | Unix (Flavors)
+	
+	Desktop - Ubuntu, RHEL 7.
+	server
+		- ubuntu | Debian, (OS) | version 17, most used is 12.04 and 14.04 (LTS)
+			- Long term support
+		- RHEL (Paid) | Centos (OS)
+		- unix
+		- fedora
+		- suse
+		- mandraike
+		- solaris
+		- slackware
+		- gentoo
+
+	* Multi threading operating system
+		- multiple users can log into the same machine at same time and work
+		- there will be no conflict of resouces (RAM, CPU etc )
+		
+		
+Mac
+
+
+vmware
+ - virtualization technology
+ - It is a hypervisor Operating system
+ - ampligies the resources that are given to it and will allocate to the respective vms inside it
+
+
+
+
+
+What is diff between a desktop and server
+
+	- desktop is single users
+	- server is multiple services
+
+
+What are the services that a server can | will provide
+
+ - webserver
+	- webserver
+	- internal and external websites
+	- windows = IIS (internet information services)
+	- Linux = RHEL = Httpd, ubuntu = apache2
+ - ftp
+	- File transfer protocol
+	- huge or bulk file transfers
+ - DNS
+	- Domain Name service
+	- Ip address to Name and Name to ip address
+	- save the details in DNS server as records
+		- study about types of records
+			- AAAA
+			- CNAME
+			- MX
+			- WWW
+			- pointer
+
+	- there are global DNS server which are maintainer by internet board 
+		- there are called as root server
+	- when you join a company 
+		- your desktops are servers are pointed to Local DNS servers which are installed, configured, managed by your IT team or local administrator
+		- internal resouces are having a DNS record. 
+	- other configurations in DNS server
+		- zones
+		- Primary and secondary
+		- master and slave
+
+
+ - DHCP
+	dynamic host control protocol
+	- how to assign a static ip address in windows
+
+ - Mail
+	windows - Exchange
+	linux	- zimra, sendmail, postfix
+
+ - Print
+ - AD | LDAP
+ - Samba
+ - File Server
+ - Application server
+
+
+
+
+
+
+
+Assignments
+ - watch videos on you tube how to install windows 2008 | 2012 server
+  - watch videos on you tube how to install Centos and Ubuntu
+ - how to take a remote connection of a windows server
+ - read more about linux (why linux)
+ - what are the services | roles that a windows server can provide
+
+**
+ - how to install webserver in Windows and linux( Centos | ubuntu) 
+
+
+
+
+

@@ -1,0 +1,45 @@
+
+
+troubleshooting tools
+docker ps
+docker inspect <12 digit hash>
+docker logs
+docker history
+docker events
+	--since/until
+
+
+-- Automate apache on ubunut
+
+
+1. log into a base container
+  docker run -ti ubuntu/lattest /bin/bash
+  	apt-get update
+  	apt-get -y install apache2
+  	vim /root/bashrc {add the below line at the end of file}
+		service apache2 start
+
+2. take the container ID, exit and commit
+  docker commit -m "apache automated" -a "trainer" <12 digit container ID> <osname/service:version>
+
+3. verify by doing below
+	docker images {new image shouldbe listed here}
+	login to the container
+		docker run -ti ubuntu/apache:v1 /bin/bash
+		service apache status
+	NOTE
+	install curl to verify the web page from command line
+
+
+---------------------------------------
+
+docker port forwarding
+
+docker run -tip 8082:80 ubuntu/apache:v1 /bin/bash
+
+
+verify if the port forward happpen
+
+browser ==> http://<ipaddress>:8082
+
+
