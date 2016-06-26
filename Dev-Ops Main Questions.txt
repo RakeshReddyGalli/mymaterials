@@ -1,0 +1,48 @@
+How does HTTP work?
+Explain your understanding and expertise on both the software development side and the techinical operations side of an organization you have worked for the past?
+Discuss your experience building bridges between IT Ops, QA and development?
+What types of testing are needed?
+Give me an example of how you would handle projects?
+What's your career objective in your role as a DevOps engineer?
+How would you make software deployable?
+What is the most important thing DevOps helps do?
+Which scripting languages do you think are most important for a DevOps engineer?
+how do you expert you would be required to multitask as a DevOps professional?
+What testing is necessary to ensure that a new service is ready for production?
+ What's a PTR in DNS?
+ Describe two-factor authentication?
+ Tell us about CI tools that you are familiar with?
+ What are adventages of NoSQL database over RDBMS?
+ What is an MX record in DNS?
+ What is the difference between RAID 0 and RAID 1?
+ How would you prepare for a migration?
+ What's your systems background?
+ What DevOps tools have you worked with?
+ How much have you interacted with cloud based software development?
+ What other tools are you familiar with that might help you in this role?
+ Are you familiar with just Linux or have you worked with Windows environments as well?
+ How can you reduce load  time of a dynamic website?
+ Describe your experience implementing continous deployment?
+ How would you ensure traceability?
+ What was youor greatest achievement on a recent project?
+ What problems did you face anf how did you solve them in a way that met the team's goals?
+ --------------------------------------------------------------
+ PUPPET
+ --------------------------------------------------------------
+ What is Puppet?
+ What is Manifests?
+ What is Module? and How it is different from Manifest?
+ Command to check requests of Certificates?
+ Command to sign requested Certificates?
+ Where Puppet Master stores Certificates?
+ What is Facter?
+ What is the use of etckeeper-commit-post and etckeeper-commit-pre on Puppet Agent?
+ What is Puppet Kick?
+ What is MCollective?
+ What's special about Puppet's model driven design?
+ Why does Puppet have its own language?
+ Can Puppet manage worksatations?
+ Does Puppet run on Windows?
+ What size organizations should use Puppet?
+ My servers are all unique; can Puppet still help?
+ 
